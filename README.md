@@ -1,5 +1,5 @@
-# parcel-multiple-static-file-copier
-[![npm version](https://img.shields.io/npm/v/parcel-multiple-static-file-copier.svg?style=flat)](https://www.npmjs.com/package/parcel-multiple-static-file-copier)
+# parcel-reporter-multiple-file-copier
+[![npm version](https://img.shields.io/npm/v/parcel-reporter-multiple-file-copier.svg?style=flat)](https://www.npmjs.com/package/parcel-reporter-multiple-file-copier)
 
 This is a [Parcel v2](https://v2.parceljs.org) plugin for copying multiple static files.
 
@@ -9,12 +9,12 @@ Forked from [this plugin](https://github.com/jvidalv/parcel-reporter-multiple-st
 
 Yarn
 ```bash
-$ yarn add -D parcel-reporter-multiple-static-file-copier
+$ yarn add -D parcel-reporter-multiple-file-copier
 ```
 
 NPM
 ```bash
-$ npm install parcel-reporter-multiple-static-file-copier --save-dev
+$ npm install parcel-reporter-multiple-file-copier --save-dev
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ You **⚠️  must extend** Parcel configuration with the plugin name in `.parce
 {
   "reporters": [
     "...",
-    "parcel-multiple-static-file-copier"
+    "parcel-reporter-multiple-file-copier"
   ]
 }
 ```

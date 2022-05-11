@@ -1,5 +1,5 @@
 {
-  "name": "parcel-multiple-static-file-copier",
+  "name": "parcel-reporter-multiple-file-copier",
   "version": "1.0.6",
   "description": "Parcel v2 plugin for copying multiple static files",
   "main": "index.js",
@@ -8,7 +8,7 @@
   "keywords": ["parcel", "plugin", "copier", "static"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/TiagoCavalcante/parcel-multiple-static-file-copier"
+    "url": "https://github.com/TiagoCavalcante/parcel-reporter-multiple-file-copier"
   },
   "dependencies": {
     "@parcel/plugin": "nightly",
