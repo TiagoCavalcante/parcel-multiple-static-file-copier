@@ -1,9 +1,9 @@
-# parcel-reporter-multiple-static-file-copier
-[![npm version](https://img.shields.io/npm/v/parcel-reporter-multiple-static-file-copier.svg?style=flat)](https://www.npmjs.com/package/parcel-reporter-multiple-static-file-copier)
+# parcel-multiple-static-file-copier
+[![npm version](https://img.shields.io/npm/v/parcel-multiple-static-file-copier.svg?style=flat)](https://www.npmjs.com/package/parcel-multiple-static-file-copier)
 
-This is a plugin for [Parcel v2](https://v2.parceljs.org) that **copies multiple specified files and folders into specified folders** once build finishes **successfully** (Event: buildSuccess).
+This is a [Parcel v2](https://v2.parceljs.org) plugin for copying multiple static files.
 
-Inspired by [this plugin](https://github.com/elwin013/parcel-plugin-static-files-copy).
+Forked from [this plugin](https://github.com/jvidalv/parcel-reporter-multiple-static-file-copier).
 
 ## Install
 
@@ -19,13 +19,12 @@ $ npm install parcel-reporter-multiple-static-file-copier --save-dev
 
 ## Usage
 
-Configuration is set under `multipleStaticFileCopier` in `package.json`. It must be an array of objects containing `origin` and `destination` props:
+Configuration is set under `staticFiles` in `package.json`. It must be an array of objects containing `origin` and `destination` props:
 
-| Property  | Path |
-| ------------- | ------------- |
-| origin  | Example: _node_modules/@package/public_  |
-| destination  | Example: _dist/public_  |
-
+|     Property | Path                                     |
+| -------------|----------------------------------------- |
+| origin       | Example: _node_modules/@package/public_  |
+| destination  | Example: _public_                        |
 
 
 You **⚠️  must extend** Parcel configuration with the plugin name in `.parcelrc`:
@@ -34,28 +33,24 @@ You **⚠️  must extend** Parcel configuration with the plugin name in `.parce
 {
   "reporters": [
     "...",
-    "parcel-reporter-multiple-static-file-copier"
+    "parcel-multiple-static-file-copier"
   ]
 }
 ```
 _*Note that the "..." notation is used to keep the default report plugins loaded by Parcel._
 
 ## Example
-This example will copy the contents of the folder _public_ into the folder _dist/public_.
-_(Note that both are in the project root)_
+This example will copy the contents of the folder _public_ into the folder _DIST_DIR_PATH/public_.
+_(Note that the DIST_DIR_PATH is specified by Parcel, you don't need to pass it)_
 
 `package.json`
 ```json
 {
-  "multipleStaticFileCopier": [
+  "staticFiles": [
     {
       "origin": "public",
-      "destination": "dist/public/"
+      "destination": "public/"
     }
   ]
 }
 ```
-
-## Todo
-
-- [ ] Add event type prop in configuration.

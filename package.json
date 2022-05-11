@@ -1,29 +1,26 @@
 {
-  "name": "parcel-reporter-multiple-static-file-copier",
-  "version": "1.0.5",
-  "description": "Parcel v2 plugin. Enables the copy of multiple static files and folders into the specified folder on build success.",
+  "name": "parcel-multiple-static-file-copier",
+  "version": "1.0.6",
+  "description": "Parcel v2 plugin for copying multiple static files",
   "main": "index.js",
-  "author": "Josep Vidal <josepvidalvidal@gmail.com>",
+  "author": "Tiago Cavalcante Trindade <tiagotrindade111@gmail.com>",
   "license": "MIT",
   "keywords": ["parcel", "plugin", "copier", "static"],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/jvidalv/parcel-reporter-multiple-static-file-copier.git"
-  },
-  "engines": {
-    "parcel": "^2.0.0-beta.1"
+    "url": "https://github.com/TiagoCavalcante/parcel-multiple-static-file-copier"
   },
   "dependencies": {
     "@parcel/plugin": "nightly",
-    "fs-extra": "^9.1.0"
+    "fs-extra": "^10.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.1",
-    "@commitlint/config-conventional": "^12.1.1",
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
     "@parcel/types": "nightly",
-    "@types/node": "^14.14.28",
-    "eslint": "^7.24.0",
-    "husky": "^6.0.0",
-    "prettier": "^2.2.1"
+    "@types/node": "^17.0.32",
+    "eslint": "^8.15.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.6.2"
   }
 }
